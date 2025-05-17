@@ -10,6 +10,7 @@
   z-index: 7;
 
   &__text {
+    margin: 0;
     font-size: 82px;
     font-weight: bold;
     text-align: center;
