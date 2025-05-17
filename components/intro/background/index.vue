@@ -1,0 +1,4 @@
+<template>
+  <IntroBackgroundCircle />
+  <IntroBackgroundText />
+</template>
