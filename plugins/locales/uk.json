@@ -1,6 +1,10 @@
 {
+  "meta": {
+    "title": "Подія MOZGI",
+    "description": "Приєднуйтесь до події MOZGI — захоплюючий досвід з музикою, інноваціями та креативом."
+  },
   "intro": {
-    "title": "FULL-CYCLE EVENT AGENCY"
+    "title": "АГЕНЦІЯ ПОВНОГО ЦИКЛУ"
   },
   "navigation": {
     "who": "Хто?",

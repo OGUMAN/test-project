@@ -1,6 +1,10 @@
 {
+  "meta": {
+    "title": "Evento MOZGI",
+    "description": "Únete al evento MOZGI: una experiencia inmersiva con música, innovación y creatividad."
+  },
   "intro": {
-    "title": "FULL-CYCLE EVENT AGENCY"
+    "title": "AGENCIA DE EVENTOS DE CICLO COMPLETO"
   },
   "navigation": {
     "who": "¿Quién?",

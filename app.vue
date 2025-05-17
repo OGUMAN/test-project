@@ -1,10 +1,29 @@
 <template>
+  <Title>MOZGI event</Title>
+  <Meta
+    name="description"
+    content="Join the MOZGI event – an immersive experience with music, innovation, and creativity."
+  />
+  <Meta property="og:title" content="MOZGI Event" />
+  <Meta
+    property="og:description"
+    content="Join the MOZGI event – an immersive experience with music, innovation, and creativity."
+  />
+  <Meta property="og:type" content="website" />
   <Header />
   <main>
     <NuxtPage />
     <PageTransitionSquare />
   </main>
 </template>
+
+<script lang="ts" setup>
+useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
+});
+</script>
 
 <style lang="scss">
 @use "./components/header/style.scss" as headerStyle;

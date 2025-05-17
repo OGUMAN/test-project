@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/" class="base-logo">
+  <NuxtLink aria-label="Home" to="/" class="base-logo">
     <!-- Black outlined logo (static background) -->
     <svg
       class="base-logo__icon logo-base animate-reveal"
