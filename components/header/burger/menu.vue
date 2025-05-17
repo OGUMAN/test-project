@@ -1,8 +1,8 @@
 <template>
   <div class="menu">
-    <BaseLink :path="'what'" @click="closeMenu">What?</BaseLink>
-    <BaseLink :path="'who'" @click="closeMenu">Who?</BaseLink>
-    <BaseLink :path="'where'" @click="closeMenu">Where?</BaseLink>
+    <BaseLink :path="'what'" @click="closeMenu">{{ $t('navigation.what') }}</BaseLink>
+    <BaseLink :path="'who'" @click="closeMenu">{{ $t('navigation.who') }}</BaseLink>
+    <BaseLink :path="'where'" @click="closeMenu">{{ $t('navigation.where') }}</BaseLink>
   </div>
 </template>
 
