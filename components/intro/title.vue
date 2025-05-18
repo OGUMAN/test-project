@@ -19,6 +19,7 @@
     will-change: transform;
     max-width: 1100px;
     padding: 0 30px;
+    text-transform: uppercase;
 
     @media screen and (max-width: 1124px) {
       font-size: 58px;

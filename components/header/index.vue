@@ -29,6 +29,8 @@
     position: absolute;
     width: 100%;
     z-index: 8;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__item {

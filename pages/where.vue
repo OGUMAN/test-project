@@ -1,10 +1,10 @@
 <template>
-  <section>
-    <BaseContentAndImage class="content container">
+  <section class="content container">
+    <BaseMouseTilt>
+      <h1>{{ $t("navigation.where") }}</h1>
+    </BaseMouseTilt>
+    <BaseContentAndImage>
       <template #content>
-        <BaseMouseTilt>
-          <h1>{{ $t("navigation.where") }}</h1>
-        </BaseMouseTilt>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
