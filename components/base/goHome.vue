@@ -1,22 +1,25 @@
 <template>
-  <NuxtLink class="base-go-home" to="/">{{ $t('go-home') }}</NuxtLink>
+  <NuxtLink class="base-go-home" to="/">{{ $t("go-home") }}</NuxtLink>
 </template>
 
 <style lang="scss" scoped>
 .base-go-home {
   text-decoration: none;
   color: black;
-  padding: 10px 20px;
+  padding: 12px 40px;
   display: block;
-  border: 1px solid black;
   width: fit-content;
+  transition: color 0.2s, background-color 0.2s, transform 0.2s;
+  font-family: "Roboto";
+  font-size: 20px;
   border-radius: 10px;
-  transition: color .2s, background-color .2s, transform .2s;
+  background-color: rgba(255, 255, 255, 0.45);
+  color: black;
 
   &:hover {
     background-color: black;
     color: white;
-    transform: scale(115%);
+    transform: scale(110%);
   }
 }
 </style>

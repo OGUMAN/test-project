@@ -56,5 +56,10 @@ provide('closeMenu', closeMenu)
     transform: rotate(-45deg);
     background: white;
   }
+
+  &:hover {
+    transform: rotate(180deg);
+  }
 }
+
 </style>

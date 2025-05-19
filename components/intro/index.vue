@@ -2,7 +2,9 @@
   <section class="intro content">
     <IntroBackground />
     <IntroLinks />
-    <IntroTitle />
+    <BaseFadeIn>
+      <IntroTitle />
+    </BaseFadeIn>
   </section>
 </template>
 

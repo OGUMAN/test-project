@@ -116,6 +116,11 @@ $size: 38px;
 
     &__icon {
       width: 15px;
+      transition: transform 0.2s;
+    }
+
+    &:hover .lang__icon {
+      transform: translateY(-3px);
     }
   }
 
@@ -125,7 +130,7 @@ $size: 38px;
     transform: translate(-50%, -50%);
 
     .lang-option {
-      transition: color 0.2s;
+      transition: color 0.2s, font-size 0.2s;
       position: absolute;
       top: 0;
       left: 0;
@@ -143,6 +148,10 @@ $size: 38px;
       &:hover,
       &.active {
         color: white;
+      }
+
+      &:hover {
+        font-size: 14px;
       }
     }
   }

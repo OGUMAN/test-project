@@ -1,8 +1,14 @@
 <template>
   <div class="menu">
-    <BaseLink :path="'what'" @click="closeMenu">{{ $t('navigation.what') }}</BaseLink>
-    <BaseLink :path="'who'" @click="closeMenu">{{ $t('navigation.who') }}</BaseLink>
-    <BaseLink :path="'where'" @click="closeMenu">{{ $t('navigation.where') }}</BaseLink>
+    <BaseLink :path="'what'" @click="closeMenu">{{
+      $t("navigation.what")
+    }}</BaseLink>
+    <BaseLink :path="'who'" @click="closeMenu">{{
+      $t("navigation.who")
+    }}</BaseLink>
+    <BaseLink :path="'where'" @click="closeMenu">{{
+      $t("navigation.where")
+    }}</BaseLink>
   </div>
 </template>
 
@@ -31,14 +37,16 @@ const closeMenu = inject("closeMenu");
   animation: fadeIn 0.3s ease;
 
   a {
-    font-size: 2rem;
+    font-size: 30px;
     margin: 1rem 0;
     color: white;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: opacity 0.2s, font-size .2s;
+    opacity: 0.7;
 
     &:hover {
-      color: #ccc;
+      opacity: 1;
+      font-size: 35px;
     }
   }
 }
