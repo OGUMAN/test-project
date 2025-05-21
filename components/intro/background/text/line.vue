@@ -1,5 +1,5 @@
 <template>
-  <div class="background-wrapper">
+  <div class="background-wrapper" :style="wrapperStyle">
     <div class="background-text">
       <span>{{ repeatedText }}</span>
     </div>
@@ -7,9 +7,31 @@
 </template>
 
 <script setup>
-const baseText = ' FULL-CYCLE EVENT AGENCY\u00A0';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
+const baseText = " FULL-CYCLE EVENT AGENCY\u00A0";
 const repeatCount = 10;
 const repeatedText = baseText.repeat(repeatCount);
+
+const wrapperStyle = ref({});
+
+function updateWrapperSize() {
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  const diagonal = Math.sqrt(w ** 2 + h ** 2);
+  wrapperStyle.value = {
+    width: `${diagonal * 1.2}px`, // add margin (20%) for safety
+  };
+}
+
+onMounted(() => {
+  updateWrapperSize();
+  window.addEventListener('resize', updateWrapperSize);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', updateWrapperSize);
+});
 </script>
 
 <style lang="scss" scoped>
@@ -20,7 +42,6 @@ const repeatedText = baseText.repeat(repeatCount);
   transform: translate(-50%, -50%) rotate(-30deg);
   overflow: hidden;
   white-space: nowrap;
-  width: 120vw;
 }
 
 .background-text {
@@ -47,6 +68,12 @@ const repeatedText = baseText.repeat(repeatCount);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 561px) {
+  .background-text {
+    font-size: 34px;
   }
 }
 </style>

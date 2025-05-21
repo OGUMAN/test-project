@@ -108,19 +108,21 @@ $size: 38px;
     height: $size;
     width: $size;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: transform .2s;
 
     &__icon {
       width: 15px;
       transition: transform 0.2s;
+      transform: translateY(1px);
     }
 
-    &:hover .lang__icon {
-      transform: translateY(-3px);
+    &:hover {
+      transform: translateY(-2px) scale(110%);
     }
   }
 

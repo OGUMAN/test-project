@@ -72,6 +72,6 @@ const path2 =
 }
 
 .animate-reveal {
-  animation: revealFromBottom 2s ease-out forwards;
+  animation: revealFromBottom 3s ease-out forwards;
 }
 </style>
