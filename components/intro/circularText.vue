@@ -79,7 +79,7 @@ const getCharRotation = (i) => getCharAngle(i) + 90;
   }
 
   &:hover &__group {
-    transition: transform 8s ease;
+    transition: transform 4s ease;
     transform: rotate(-360deg);
   }
 

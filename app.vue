@@ -1,5 +1,5 @@
 <template>
-  <Title>MOZGI event</Title>
+  <Title>{{ $t("name") }}</Title>
   <Meta
     name="description"
     content="Join the MOZGI event – an immersive experience with music, innovation, and creativity."
