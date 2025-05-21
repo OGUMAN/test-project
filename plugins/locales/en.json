@@ -1,5 +1,8 @@
 {
-  "name": "Mozgi",
+  "meta": {
+    "title": "Mozgi",
+    "description": "Join the Mozgi event – an immersive experience with music, innovation, and creativity."
+  },
   "intro": {
     "title": "FULL-CYCLE EVENT AGENCY"
   },

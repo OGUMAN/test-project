@@ -16,3 +16,16 @@ p {
   font-family: "Roboto";
   font-size: 20px;
 }
+
+body,
+html {
+  background: #bebebe;
+  font-family: "TRYGrtsk", sans-serif;
+  color: #373737;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
